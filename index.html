@@ -11,12 +11,149 @@
 
 <body>
   <!-- Navbar section -->
+   <nav class="navbar">
+  <div class="navbar-logo">
+    <img src="./images/logo.png" width="300" />
+  </div>
+  <ul class="navbar-items">
+    <li>About Me</li>
+    <li>Journey</li>
+    <li>Goals</li>
+  </ul>
+</nav>
 
   <!-- Hero section -->
+   <div class="hero">
+  <h1>
+    Hello! <br />
+    I'm Hadeel
+  </h1>
+  <p>A web developer</p>
+  <a href="mailto:hadielelyas@gmail.com">
+    <button>Contact Me</button>
+  </a>
+</div>
+
+.hero {
+  background-image: url('/images/hero.png');
+  height: 500px;
+  padding-top: 219px;
+  padding-left: 103px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 35px;
+  padding: 12px 30px;
+  background: #52647E;
+  color: white;
+  border-radius: 10px;
+}
 
   <!-- Coding journey section -->
 
+  <div id="coding-journey" class="journey">
+  <h2>Coding Journey</h2>
+
+  <div class="journey-list">
+    <div id="intro" class="journey-card">
+      <img
+        src="/images/intro-to-web.png"
+        class="journey-image"
+        alt="Course Image"
+      />
+      <div>
+        <h3>Intro To Web Development</h3>
+        <p>
+          Learned how to build <br />Web Html Projects
+        </p>
+      </div>
+    </div>
+
+    <div id="react" class="journey-card">
+      <img src="/images/react.png" class="journey-image" alt="Course Image" />
+      <div>
+        <h3>React Development</h3>
+        <p>
+          Learned how to build <br />Single Page Application
+        </p>
+      </div>
+    </div>
+
+    <div id="backend" class="journey-card">
+      <img src="/images/backend.png" class="journey-image" alt="Course Image" />
+      <div>
+        <h3>Back-end Development</h3>
+        <p>
+          Learned how to build <br />Back-end services
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+.journey {
+  background: #618379;
+  padding: 57px 0;
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 57px;
+}
+
+.journey-list {
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: space-between;
+}
+
+.journey-card {
+  width: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 40px;
+  color:gray;
+}
+
+.journey-image {
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+
+
+
   <!-- Footer section -->
+
+  <footer>
+  <p>Website Made By Mary Jane</p>
+</footer>
+
+
+footer {
+  background: #333232;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+
 
   <script src="./script.js"></script>
 </body>
